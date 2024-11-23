@@ -10,7 +10,15 @@
 <body>
 
     <script>
-        // 将在这里添加JavaScript代码
+        function foo() {
+            console.log("foo函数:", this)
+        }
+
+        var obj = {
+            bar: foo
+        }
+
+        obj.bar()
     </script>
 
 </body>
