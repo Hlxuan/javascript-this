@@ -10,7 +10,12 @@
 <body>
 
     <script>
-        // 将在这里插入JavaScript代码
+        function foo(name, age, height, address) {
+            console.log("foo:", this)
+            console.log("参数:", name, age, height, address)
+        }
+
+        var obj = { name: "gkd" }
     </script>
 
 </body>
