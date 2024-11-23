@@ -15,6 +15,16 @@
         setTimeout(function () {
             console.log("定时器函数：", this)
         }, 1000)
+
+        var btnEl = document.querySelector("button")
+
+        btnEl.onclick = function () {
+            console.log("btn的点击（onclick）", this)
+        }
+
+        btnEl.addEventListener("click", function () {
+            console.log("btn的点击（addEventListener）", this)
+        })
     </script>
 
 </body>
