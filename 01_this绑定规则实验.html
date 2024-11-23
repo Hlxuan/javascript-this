@@ -25,6 +25,12 @@
 
         var baz = obj.bar
         baz()
+
+        function test(fn) {
+            fn()
+        }
+
+        test(obj.bar)
     </script>
 
 </body>
