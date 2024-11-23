@@ -31,6 +31,14 @@
         }
 
         test(obj.bar)
+
+        "use strict"
+
+        function foo() {
+            console.log("foo (strict):", this)
+        }
+
+        foo()
     </script>
 
 </body>
