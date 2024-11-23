@@ -10,7 +10,12 @@
 <body>
 
     <script>
-        // 在这里插入JavaScript代码
+        function foo() {
+            this.name = "gkd"
+            console.log("foo函数:", this)
+        }
+
+        new foo()
     </script>
 
 </body>
