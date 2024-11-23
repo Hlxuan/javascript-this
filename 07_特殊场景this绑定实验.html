@@ -25,6 +25,11 @@
         btnEl.addEventListener("click", function () {
             console.log("btn的点击（addEventListener）", this)
         })
+
+        var names = ["abc", "cba", "nba"]
+        names.forEach(function (item) {
+            console.log("forEach:", this)
+        }, "aaaa")
     </script>
 
 </body>
