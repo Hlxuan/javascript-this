@@ -10,7 +10,12 @@
 <body>
 
     <script>
-        // 将在这里插入JavaScript代码
+        function foo(name, age, height) {
+            console.log("foo函数被调用:", this)
+            console.log("打印参数:", name, age, height)
+        }
+
+        foo("gkd", 18, 1.88)
     </script>
 
 </body>
